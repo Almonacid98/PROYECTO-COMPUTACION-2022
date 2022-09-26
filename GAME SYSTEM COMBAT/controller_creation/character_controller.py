@@ -10,7 +10,7 @@ def save_character_files(self):
             if os.stat('c:/myarchivo.txt').st_size == 0:
 
                     print('empty character space')
-                    chosen_file = 'character_1.txt'
+                    chosen_file = 'character_one.txt'
                     with open(chosen_file, "w") as archive:
                         archive.writelines(lista_character)
                     break
@@ -21,7 +21,7 @@ def save_character_files(self):
         elif choice_file == 2:
             if os.stat('c:/myarchivo.txt').st_size == 0:
                 print('espacio de personaje vacio')
-                chosen_file = 'character_2.txt'
+                chosen_file = 'character_two.txt'
                 with open(chosen_file, "w") as archive:
                     archive.writelines(lista_character)
                 break
@@ -32,7 +32,7 @@ def save_character_files(self):
         elif choice_file == 3:
             if os.stat('c:/myarchivo.txt').st_size == 0:
                 print('espacio de personaje vacio')
-                chosen_file = 'character_3.txt'
+                chosen_file = 'character_tree.txt'
                 with open(chosen_file, "w") as archive:
                     archive.writelines(lista_character)
                 break
