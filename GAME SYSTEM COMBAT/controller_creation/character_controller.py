@@ -7,10 +7,10 @@ def save_character_files(self):
     choice_file = input("Enter which character these characteristics belong to for later saving: -----> 1: [Character_One] * 2: [Character_Two] * 3: [Character_tree]")
     while True:
         if choice_file == 1:
-            if os.stat('c:/myarchivo.txt').st_size == 0:
+            if os.stat('C:\Users\devil\OneDrive\Escritorio\GAME SYSTEM COMBAT\character_one.txt').st_size == 0:
 
                     print('empty character space')
-                    chosen_file = 'character_1.txt'
+                    chosen_file = 'character_one.txt'
                     with open(chosen_file, "w") as archive:
                         archive.writelines(lista_character)
                     break
@@ -19,9 +19,9 @@ def save_character_files(self):
                 break
 
         elif choice_file == 2:
-            if os.stat('c:/myarchivo.txt').st_size == 0:
+            if os.stat('C:\Users\devil\OneDrive\Escritorio\GAME SYSTEM COMBAT\character_two.txt').st_size == 0:
                 print('espacio de personaje vacio')
-                chosen_file = 'character_2.txt'
+                chosen_file = 'character_two.txt'
                 with open(chosen_file, "w") as archive:
                     archive.writelines(lista_character)
                 break
@@ -30,9 +30,9 @@ def save_character_files(self):
                 break
 
         elif choice_file == 3:
-            if os.stat('c:/myarchivo.txt').st_size == 0:
+            if os.stat('C:\Users\devil\OneDrive\Escritorio\GAME SYSTEM COMBAT\character_tree.txt').st_size == 0:
                 print('espacio de personaje vacio')
-                chosen_file = 'character_3.txt'
+                chosen_file = 'character_tree.txt'
                 with open(chosen_file, "w") as archive:
                     archive.writelines(lista_character)
                 break

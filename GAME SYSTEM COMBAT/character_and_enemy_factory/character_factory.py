@@ -1,3 +1,6 @@
+from abc import abstractmethod
+
+
 class Character():
 
     def __init__(self, name, age, strength, agility, life, type) -> None: #Solo se pueden crear un máximo de 3 personajes
@@ -48,8 +51,9 @@ class Character():
     def attack(self, objetive):
         pass
 
+    @abstractmethod
     def get_status(self):
-        pass
+        print(f"Name: {self.name}. Life: {self.__life}. Type:{self.type}")
     
     def increase_attribute(self):
         pass
