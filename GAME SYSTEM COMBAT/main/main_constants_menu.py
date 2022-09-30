@@ -1,6 +1,6 @@
 from character_and_enemy_factory.character_factory import *
-from controller_creation.character_controller import *
-def character_creation_menu(self):
+from controller_creation.character_controller import save_character_files
+def character_creation_menu():
     for i in  range(0,2):
         name = input("Enter the character's name:")
         age = input("Enter the age of the character:")
@@ -22,7 +22,7 @@ def character_creation_menu(self):
                 print("\n WRONG OPTION.... PLEASE AGAIN CHOOSE AN EXISTING OPTION IN THE SYSTEM....")
         Character(name, age, strength, agility, life, type)
         save_character_files()
-
+        
 def enemy_creation_menu(self):
     pass
 
