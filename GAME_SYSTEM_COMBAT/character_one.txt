@@ -1,0 +1,1 @@
+[<function Character.get_name at 0x0000020A3E9D3250>, <function Character.get_age at 0x0000020A3E9D32E0>, <function Character.get_strength at 0x0000020A3E9D3370>, <function Character.get_agility at 0x0000020A3E9D3400>, <function Character.get_life at 0x0000020A3E9D3490>, <function Character.get_type at 0x0000020A3E9D3520>]
