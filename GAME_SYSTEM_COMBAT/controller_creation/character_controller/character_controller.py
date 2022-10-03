@@ -1,4 +1,4 @@
-from character_and_enemy_factory.character_factory import *
+from main_constants_menu import *
 import os
 from os import remove
 character_data = Character

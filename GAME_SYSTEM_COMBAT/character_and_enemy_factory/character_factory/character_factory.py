@@ -1,6 +1,4 @@
 from abc import abstractmethod
-
-
 class Character():
 
     def __init__(self, name, age, strength, agility, life, type) -> None: #Solo se pueden crear un máximo de 3 personajes
