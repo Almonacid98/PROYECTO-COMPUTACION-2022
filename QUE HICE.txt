@@ -1,0 +1,3 @@
+Restructure el modelo, el problema de los modulos y que no los tomaba era que el menu estaba dentro de una carpeta
+eso impedia que pudiera llamar a los modulos como character_and_enemy y demas, lo que hice es sacarlo y dejar menu y menu constants
+afuera, todavia no agrego lo de level, voy a trabajar ahora
