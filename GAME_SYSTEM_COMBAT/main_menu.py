@@ -1,6 +1,6 @@
 import main_constants_menu
-from controller_creation.character_controller.character_controller import save_character_files
-def start_menu():
+from controller_creation.character_controller.character_controller import save_character_files, delete_character
+def start_menu(self):
     while True:
             print("<<<<<GAME SYSTEM COMBAT>>>>>")
             print("1 = Create Character:")
@@ -11,7 +11,7 @@ def start_menu():
             print("6 = <<GAME OVER>>")
             choice = input("CHOOSE THE MODE TO START PLAYING[1/2/3/4/5/6]  = ")
             if choice == '1':
-                main_constants_menu.character_creation_menu()
+                main_constants_menu.character_creation_menu(self.name)
                 save_character_files()
             elif choice == '2':
                 pass
@@ -20,7 +20,7 @@ def start_menu():
                 pass
 
             elif choice == "4":
-               pass
+               delete_character()
 
             elif choice == "5":
                 pass
