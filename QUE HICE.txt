@@ -1,3 +1,12 @@
+(Gabriel) 11/10/22
 Restructure el modelo, el problema de los modulos y que no los tomaba era que el menu estaba dentro de una carpeta
 eso impedia que pudiera llamar a los modulos como character_and_enemy y demas, lo que hice es sacarlo y dejar menu y menu constants
 afuera, todavia no agrego lo de level, voy a trabajar ahora
+
+
+
+
+
+23/10/22 (gabriel)
+Borre carpetas, compacte el codigo, hice que funcionara el guardado de personaje, (puede mejorarse, resolver problema de datos internos, cuando
+guarda personajes los guarda, pero al seleccionar otro archivo arrastra las opciones elegidas anteriormente).
