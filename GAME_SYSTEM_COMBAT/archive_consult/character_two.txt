@@ -1,0 +1,1 @@
+['asd', 's', 2, 2, 2, 'WARRIOR', 'sa}', '2', 1, 1, 1, 'WARRIOR', 'sad', 'sad', 2, 2, 2, 'ELF']
