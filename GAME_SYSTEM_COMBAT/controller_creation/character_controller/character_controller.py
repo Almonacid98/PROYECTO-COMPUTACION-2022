@@ -4,7 +4,7 @@ from character_and_enemy_factory.character_factory.character_factory import *
 class Contantes():
 
     __lista = []
-
+    
     def set_lista_save(self, lista):
         self.__lista = lista
 
@@ -13,27 +13,33 @@ class Contantes():
         while contador <= 3:
             name = input("Enter the character's name:")
             age = input("Enter the age of the character:")
-            strength = int(input("Enter the strength of the character, remember that there is a limit of 15 points for all attributes:"))
-            agility = int(input("Enter the agility of the character, remember that there is a limit of 15 points for all attributes:"))
-            life = int(input("Enter the life of the character, remember that there is a limit of 15 points for all attributes:"))
-            choice = input("Enter the type of character, there are only 3 types -----> 1:[WARRIOR] * 2:[Elf] * 3:[Archer]")
             while True:
-                        if choice == '1':
-                            type = "WARRIOR"   
-                            break
-                        elif choice == '2':
-                            type = "ELF"  
-                            break
-                        elif choice == '3':
-                            type = "ARCHER"
-                            break
-                        else:
-                            print("\n WRONG OPTION.... PLEASE AGAIN CHOOSE AN EXISTING OPTION IN THE SYSTEM....")
-            Character(name, age, strength, agility, life, type)
-            self.__lista.extend([name, age, strength, agility, life, type])
-            contador += 1
+                strength = int(input("Enter the strength of the character, remember that there is a limit of 15 points for all attributes:"))
+                agility = int(input("Enter the agility of the character, remember that there is a limit of 15 points for all attributes:"))
+                life = int(input("Enter the life of the character, remember that there is a limit of 15 points for all attributes:"))
+                value = strength + agility + life
+                if(value == 15):
+                    choice = input("Enter the type of character, there are only 3 types -----> 1:[WARRIOR] * 2:[Elf] * 3:[Archer]")
+                    while True:
+                                if choice == '1':
+                                    type = "WARRIOR"   
+                                    break
+                                elif choice == '2':
+                                    type = "ELF"  
+                                    break
+                                elif choice == '3':
+                                    type = "ARCHER"
+                                    break
+                                else:
+                                    print("\n WRONG OPTION.... PLEASE AGAIN CHOOSE AN EXISTING OPTION IN THE SYSTEM....")
+                    Character(name, age, strength, agility, life, type)
+                    self.__lista.extend([name, age, strength, agility, life, type])
+                    contador += 1
+                    break
+                else:
+                    print("Valor de atributos no validos, superan el limite de 15 puntos por personaje")
+                    input("Pulse cualquier tecla para volver a ingresar los atributos")
             break
-
     def save_character_files(self):
         choice_file = input("Enter which character these characteristics belong to for later saving: -----> 1: [Character_One] * 2: [Character_Two] * 3: [Character_tree]:")
         while True:
@@ -44,7 +50,8 @@ class Contantes():
                         chosen_file = 'C:/Users/devil/OneDrive/Escritorio/GAME_SYSTEM_COMBAT/archive_consult/character_one.txt'
                         with open(chosen_file, "w") as archive:
                             archive.writelines(str(self.__lista))
-                        break
+                            self.__lista.clear()
+                            break
                 else:
                     print('Character slot full, enter another option')
                     break
@@ -56,7 +63,8 @@ class Contantes():
                     chosen_file = 'C:/Users/devil/OneDrive/Escritorio/GAME_SYSTEM_COMBAT/archive_consult/character_two.txt'
                     with open(chosen_file, "w") as archive:
                         archive.writelines(str(self.__lista))
-                    break
+                        self.__lista.clear()
+                        break
                 else: 
                     print('Character slot full, enter another option')
                     break
@@ -68,7 +76,8 @@ class Contantes():
                     chosen_file = 'C:/Users/devil/OneDrive/Escritorio/GAME_SYSTEM_COMBAT/archive_consult/character_tree.txt'
                     with open(chosen_file, "w") as archive:
                         archive.writelines(str(self.__lista))
-                    break
+                        self.__lista.clear()
+                        break
                 else:
                     print('Character slot full, please remove a character')
                     break

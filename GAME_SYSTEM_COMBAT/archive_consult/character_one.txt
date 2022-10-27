@@ -1,1 +1,1 @@
-[<bound method Character.get_name of <character_and_enemy_factory.character_factory.character_factory.Character object at 0x000001B46F4E3F70>>]
+['sa', '2', 10, 2, 3, 'WARRIOR']
