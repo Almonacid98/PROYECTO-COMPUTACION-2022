@@ -1,6 +1,7 @@
 import os
 from os import remove
 from character_and_enemy_factory.character_factory.character_factory import *
+from visual_interface.interface.visual import character_view
 class Contantes():
 
     __lista = []
@@ -50,6 +51,7 @@ class Contantes():
                         chosen_file = 'C:/Users/devil/OneDrive/Escritorio/GAME_SYSTEM_COMBAT/archive_consult/character_one.txt'
                         with open(chosen_file, "w") as archive:
                             archive.writelines(str(self.__lista))
+                            character_view()
                             self.__lista.clear()
                             break
                 else:
