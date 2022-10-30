@@ -1,6 +1,5 @@
 from controller_creation.character_controller.character_controller import *
 from character_and_enemy_factory.enemy_factory.enemy_factory import *
-from controller_creation.select_character.select_character import *
 from combat_system.combat.combat import *
 from controller_creation.enemy_controller.enemy_controller import *
 def start_menu():
@@ -22,11 +21,11 @@ def start_menu():
                 for i in range(10):
                     lista = ['Warrior', 'Elf', 'Archer', 'Wizard', 'Master Swordsman']
                     race = ['Human', 'Inhuman']
-                    enemy = Enemy(random.choice(race), random.randint(0, 100), random.randint(0, 5), random.randint(0, 5), random.randint(0, 5), random.choice(lista))
+                    enemy = Enemy(random.choice(race), random.randint(0, 100), random.randint(0, 5), random.randint(0, 5), random.randint(1, 5), random.choice(lista))
                     enemy.generate()
                     
             elif choice == '3':
-                selection = Selection()
+                selection = Combat()
                 selection.select_character()
 
             elif choice == "4":
@@ -35,7 +34,8 @@ def start_menu():
             elif choice == "5":
                 save_enemy()
                 combat = Combat()
-                combat.ver()
+                combat.select_enemy()
+                combat.combat()
 
             elif choice == '6':
                 print("¡Thanks For Fighting With The Team!")
