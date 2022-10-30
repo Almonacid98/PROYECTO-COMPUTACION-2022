@@ -1,1 +1,6 @@
-['pepe', '2', 10, 2, 3, 'WARRIOR']
+pepe
+2
+5
+5
+5
+WARRIOR

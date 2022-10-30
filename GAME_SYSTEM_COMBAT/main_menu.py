@@ -1,4 +1,8 @@
+from math import comb
 from controller_creation.character_controller.character_controller import *
+from character_and_enemy_factory.enemy_factory.enemy_factory import *
+from controller_creation.select_character.select_character import *
+from combat_system.combat.combat import *
 def start_menu():
     while True:
             print("<<<<<GAME SYSTEM COMBAT>>>>>")
@@ -13,18 +17,22 @@ def start_menu():
                 charac = Contantes()
                 charac.character_creation_menu()
                 charac.save_character_files()
-                
             elif choice == '2':
-                pass
-
+                for i in range(10):
+                    lista = ['Warrior', 'Elf', 'Archer', 'Wizard', 'Master Swordsman']
+                    race = ['Human', 'Inhuman']
+                    enemy = Enemy(random.choice(race), random.randint(0, 100), random.randint(0, 5), random.randint(0, 5), random.randint(0, 5), random.choice(lista))
+                    enemy.generate()
+                    
             elif choice == '3':
-                pass
-
+                selection = Selection()
+                selection.select_character()
             elif choice == "4":
                 Contantes.delete_character()
 
             elif choice == "5":
-                pass
+                combat = Combat
+                combat.lista()
 
             elif choice == '6':
                 print("¡Thanks For Fighting With The Team!")

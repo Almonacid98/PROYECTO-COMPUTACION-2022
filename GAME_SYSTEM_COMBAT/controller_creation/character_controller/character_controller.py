@@ -1,7 +1,7 @@
 import os
 from os import remove
 from character_and_enemy_factory.character_factory.character_factory import *
-from visual_interface.interface.visual import character_view
+from visual_interface.interface.visual import *
 class Contantes():
 
     __lista = []
@@ -50,10 +50,12 @@ class Contantes():
                         print('empty character space')
                         chosen_file = 'C:/Users/devil/OneDrive/Escritorio/GAME_SYSTEM_COMBAT/archive_consult/character_one.txt'
                         with open(chosen_file, "w") as archive:
-                            archive.writelines(str(self.__lista))
-                            character_view()
+                            lst_new = [str(a) for a in self.__lista]
+                            archive.writelines("\n" . join(lst_new))
                             self.__lista.clear()
-                            break
+                        character_view_one()
+                        input("Presione una tecla para continuar...")
+                        break
                 else:
                     print('Character slot full, enter another option')
                     break
@@ -64,9 +66,12 @@ class Contantes():
                     print('espacio de personaje vacio')
                     chosen_file = 'C:/Users/devil/OneDrive/Escritorio/GAME_SYSTEM_COMBAT/archive_consult/character_two.txt'
                     with open(chosen_file, "w") as archive:
-                        archive.writelines(str(self.__lista))
+                        lst_new = [str(a) for a in self.__lista]
+                        archive.writelines("\n" . join(lst_new))
                         self.__lista.clear()
-                        break
+                    character_view_two()
+                    input("Presione una tecla para continuar...")
+                    break
                 else: 
                     print('Character slot full, enter another option')
                     break
@@ -77,9 +82,12 @@ class Contantes():
                     print('espacio de personaje vacio')
                     chosen_file = 'C:/Users/devil/OneDrive/Escritorio/GAME_SYSTEM_COMBAT/archive_consult/character_tree.txt'
                     with open(chosen_file, "w") as archive:
-                        archive.writelines(str(self.__lista))
+                        lst_new = [str(a) for a in self.__lista]
+                        archive.writelines("\n" . join(lst_new))
                         self.__lista.clear()
-                        break
+                    character_view_tree()
+                    input("Presione una tecla para continuar...")
+                    break
                 else:
                     print('Character slot full, please remove a character')
                     break

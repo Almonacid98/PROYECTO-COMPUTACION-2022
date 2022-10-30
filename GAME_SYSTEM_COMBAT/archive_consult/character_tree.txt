@@ -1,1 +1,6 @@
-['yiy', '4', 10, 2, 3, 'ARCHER']
+andres
+2
+5
+5
+5
+ARCHER
