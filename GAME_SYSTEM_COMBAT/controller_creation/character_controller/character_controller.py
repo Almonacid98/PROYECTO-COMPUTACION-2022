@@ -2,6 +2,7 @@ import os
 from os import remove
 from character_and_enemy_factory.character_factory.character_factory import *
 from visual_interface.interface.visual import *
+
 class Contantes():
 
     __lista = []
@@ -102,3 +103,4 @@ class Contantes():
             remove('C:/Users/devil/OneDrive/Escritorio/GAME_SYSTEM_COMBAT/archive_consult/character_tree.txt')
         else:
             print("Wrong option, enter a valid option")
+
