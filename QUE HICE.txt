@@ -17,3 +17,4 @@ guarda personajes los guarda, pero al seleccionar otro archivo arrastra las opci
 
 30/10/22(gabriel)
 Termine todo el sistema de juego, falta el de combate nomas
+ "Se agrego sistema aleatorio de enemigos, con listas, y utilizacion de enemy controller"
