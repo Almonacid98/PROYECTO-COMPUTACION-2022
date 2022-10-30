@@ -1,4 +1,8 @@
 class Selection:
+    
+    def __init__(self) -> None:
+        pass
+
     def select_character(self):
         option = int(input("<<<Choose Your Character>>>\nOption 1: Character One\nOption 2: Character Two\nOption 3: Character Three\nWho is The Choosen One:"))
         if option == 1:

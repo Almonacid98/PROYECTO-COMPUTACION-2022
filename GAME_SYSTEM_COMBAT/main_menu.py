@@ -1,4 +1,3 @@
-from math import comb
 from controller_creation.character_controller.character_controller import *
 from character_and_enemy_factory.enemy_factory.enemy_factory import *
 from controller_creation.select_character.select_character import *
@@ -35,6 +34,8 @@ def start_menu():
 
             elif choice == "5":
                 save_enemy()
+                combat = Combat()
+                combat.ver()
 
             elif choice == '6':
                 print("¡Thanks For Fighting With The Team!")
