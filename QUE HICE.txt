@@ -10,3 +10,10 @@ afuera, todavia no agrego lo de level, voy a trabajar ahora
 23/10/22 (gabriel)
 Borre carpetas, compacte el codigo, hice que funcionara el guardado de personaje, (puede mejorarse, resolver problema de datos internos, cuando
 guarda personajes los guarda, pero al seleccionar otro archivo arrastra las opciones elegidas anteriormente).
+
+
+
+
+
+30/10/22(gabriel)
+Termine todo el sistema de juego, falta el de combate nomas
