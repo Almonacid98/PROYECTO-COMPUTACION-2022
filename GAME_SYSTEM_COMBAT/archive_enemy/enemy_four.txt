@@ -1,6 +1,6 @@
-Human
-93
+Inhuman
+56
 0
-5
 1
-Warrior
+3
+Archer

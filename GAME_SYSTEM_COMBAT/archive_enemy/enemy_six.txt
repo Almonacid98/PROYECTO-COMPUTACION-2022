@@ -1,6 +1,6 @@
-Inhuman
-43
+Human
+31
 0
-0
-4
-Warrior
+5
+5
+Master Swordsman

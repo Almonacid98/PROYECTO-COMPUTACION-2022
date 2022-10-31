@@ -1,6 +1,6 @@
 Inhuman
-59
-4
-1
+9
+2
 3
-Warrior
+3
+Wizard
