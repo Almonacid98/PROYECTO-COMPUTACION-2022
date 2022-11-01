@@ -5,7 +5,7 @@ from visual_interface.interface.visual import *
 class Combat():
     __lista_character = []
     __lista_enemy = []
-
+    
     def set_character_list(self, list_char):
         self.__lista_character = list_char
     
@@ -62,6 +62,7 @@ class Combat():
     
     def combat(self):
         start = input("want to start the fight?: yes or no: ")
+        contador = 0
         if start == 'yes':
             while True:
                         opcion_character = input("Character's turn, do you want to attack or pass turn? attack/pass turn: ")
@@ -105,7 +106,19 @@ class Combat():
                                     print("El enemigo te ha vencido..")
                                     self.__lista_character.clear()
                                     self.__lista_enemy.clear()
-                                    remove('C:/Users/devil/OneDrive/Escritorio/GAME_SYSTEM_COMBAT/archive_consult/character_one.txt')
-                                    break
+                                    contador += 1
+                                    while True:
+                                        if contador == 1:
+                                            remove('C:/Users/devil/OneDrive/Escritorio/GAME_SYSTEM_COMBAT/archive_consult/character_one.txt')
+                                            break
+                                        elif contador == 2:
+                                            remove('C:/Users/devil/OneDrive/Escritorio/GAME_SYSTEM_COMBAT/archive_consult/character_two.txt')
+                                            break
+                                        elif contador == 3:
+                                            remove('C:/Users/devil/OneDrive/Escritorio/GAME_SYSTEM_COMBAT/archive_consult/character_tree.txt')
+                                            break
+                                    break         
                             elif random.choice(opcion_enemy) == 'pass turn':
                                 pass
+        else:
+            input("Volviendo al menu.....")
